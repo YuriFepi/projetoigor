@@ -1,0 +1,187 @@
+body {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.container {
+	display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.overlay-image {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 120px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.first-content {
+	width: 360px;
+    height: auto;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.content-lista p {
+    font-size: 19px ;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+.botao {
+    display: flex;
+}
+
+.botao_contato {
+    background-color: #383838;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    border: 1px solid wheat;
+}
+
+
+article .container-spotify {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.spotify {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.paragrafo {
+    --blur: 0px;
+    margin-top: 20px;
+    opacity: 0.2055;
+    will-change: auto;
+    filter: blur(var(--blur));
+}
+
+.youtube {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+article .container-sobre {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremim {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 30px;
+    Width: 770px;
+    font-family: "ubuntu", sans-serif;
+    margin-bottom: 30px;
+}
+.footer {
+    display: flex;
+    color: grey;
+    text-align: justify;
+    width: 1445px;
+    justify-content:space-around;
+
+}
+
+@media (max-width:767px) {
+    .logo-igor {
+        position: relative;
+        width: 1171px;
+    }
+    .overlay-image {
+        width: 350px;
+        height: 60px;
+        padding-bottom: 70px;
+    }
+    .agenda-igor {  
+        width: 171px;
+        height: 38px;
+        position: relative;
+        top: -40px;
+    }
+    .content-lista p{
+        font-size: 14px;
+        text-align: left;
+        padding-right: 100px;
+        position: relative;
+        top: -110px;
+    }
+    .botao_contato {
+        font-size: 15px;
+        margin-right: 20px;
+        position: relative;
+        top: -70px;
+    }
+    .spotify {
+        width: 350px;
+        height: 90px;
+        margin: 200px;
+        padding-right: 15px;
+        position: relative;
+        top: -40px;
+    }
+    .paragrafo {
+        font-size: 20px;
+        font: bold;
+        text-align: center;
+        position: relative;
+        top: -240px;
+    }
+    .youtube {
+        position: relative;
+        width: 350px;
+        height: 90px;
+        padding-right: 15px;
+        top: -100px;    
+    }
+    .logo-sobre {
+        width: 203px;
+        height: 32px;
+    }
+    .sobremim {
+        font-size: 10px;
+        text-align: justify;
+        width: 350px;
+        position: relative;
+        top: -20px;
+        padding-right: 15px;
+    }
+}
