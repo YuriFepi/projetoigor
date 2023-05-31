@@ -121,7 +121,7 @@ article .container-sobre {
 
 }
 
-@media (max-width:767px) {
+@media only screen and (max-width:767px) {
     .logo-igor {
         position: relative;
         width: 1171px;
